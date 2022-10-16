@@ -59,16 +59,20 @@
                     {% block content %}{% endblock %}
                 </div>
                 <div class="col-md-4">
-                    <div class="content-section">
-                        <h3>My Sidebar</h3>
-                        <p class='text-muted'>Add something...
-                            <ul class="list-group">
-                                <li class="list-group-item list-group-item-light">Latest Posts</li>
-                                <li class="list-group-item list-group-item-light">Categories</li>
-                                <li class="list-group-item list-group-item-light">Calendars</li>
-                                <li class="list-group-item list-group-item-light">Archives</li>
-                            </ul>
-                        </p>
+                    <div class="sidebar">
+                        <img class="sidebar-logo" src="{{ url_for('static', filename='logo_image/blogger_logo.jpg') }}">
+                        <hr>
+                        <div>
+                            <p>
+                                Welcome to Blogger! Feel free to register, upload profile pictures, write or delete your posts 
+                                etc. This is the first version of the application. Updates coming soon. For more further questions, 
+                                you can contact me on social media below...
+                            </p>
+                            <a href="#"><img class="sidebar-icon" src="{{ url_for('static', filename='contact_icons/facebook.png') }}"/></a>
+                            <a href="#"><img class="sidebar-icon" src="{{ url_for('static', filename='contact_icons/instagram.png') }}"/></a>
+                            <a href="#"><img class="sidebar-icon" src="{{ url_for('static', filename='contact_icons/twitter.png') }}"/></a>
+                            <a href="#"><img class="sidebar-icon" src="{{ url_for('static', filename='contact_icons/github.png') }}"/></a>
+                        </div>
                     </div>
                 </div>
             </div>
