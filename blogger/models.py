@@ -1,3 +1,4 @@
+import random
 from flask import current_app
 from blogger import db, login_manager
 from datetime import datetime
